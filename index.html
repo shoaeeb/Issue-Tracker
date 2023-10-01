@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Issue Tracker</title>
+  </head>
+  <body>
+    <!-- //User can post the issue //User can resolve someone else issue //User can
+    delete their issue //user can close the issue if resolved -->
+    <nav>
+      <h1>JS Issue Tracker</h1>
+
+      <span> by Yohan,Libert</span>
+    </nav>
+    <div class="main-container">
+      <h4>Add New Issue:</h4>
+      <form action="#" method="POST">
+        <label for="description">Description:</label><br />
+        <input
+          type="text"
+          placeholder="Describe the issue...."
+          name="description"
+          id="description"
+          required
+        />
+        <br />
+        <label for="severity">Severity</label>
+        <br />
+        <select name="severity" id="severity">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <br />
+        <label for="assigned">Assigned To:</label><br />
+        <input
+          type="text"
+          placeholder="Enter Responsible..."
+          name="responsibility"
+          id="assigned"
+        />
+        <br />
+        <br />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <div class="issues-container"></div>
+  </body>
+</html>

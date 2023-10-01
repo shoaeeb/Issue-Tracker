@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'AR One Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+nav > span {
+  color: rgb(218, 215, 215);
+  margin-left: 5px;
+}
+
+.main-container {
+  background-color: antiquewhite;
+  padding: 20px 10px;
+}
+.main-container input[type='text'],
+select {
+  width: calc(100vw - 35%);
+}
+.main-container button[type='submit'] {
+  padding: 5px;
+  background-color: #0ba6ff;
+  color: white;
+  border: none;
+}
+
+.issues-container {
+  margin-top: 15px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.issues {
+  padding: 5px;
+  background-color: antiquewhite;
+}
+.issues > * {
+  padding: 5px;
+}
+.issues > .actions {
+  display: flex;
+  column-gap: 15px;
+}
+
+.issues > .status {
+  background-color: #0ba6ff;
+  color: white;
+  width: fit-content;
+}
+.actions > * {
+  color: white;
+  padding: 5px;
+  border-radius: 16px;
+}
+.close {
+  background-color: orange;
+}
+
+.delete {
+  background-color: red;
+}
